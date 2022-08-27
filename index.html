@@ -7,15 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - nftables web ui</title>
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-      integrity="sha256-YPguGDqg55HB8+tbrJBbWuiF9J+XCK7sjscaiwFMTxI= sha384-Dv/31bNdy5iSIdT3DbFwGhN3LnetXu2VyL8xFYMqdHvfA1BFqWmoIHum+ocjdjtu sha512-MQSeeHVtBZ+FnVbcJbGKYk4Clc5A2e0bqWg+yiSMROJsnzyIfe9nivRWhmlOBAoh+NOqVOPPL7AaLUq/rSXL5w=="
+      integrity="sha512-MQSeeHVtBZ+FnVbcJbGKYk4Clc5A2e0bqWg+yiSMROJsnzyIfe9nivRWhmlOBAoh+NOqVOPPL7AaLUq/rSXL5w=="
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      integrity="sha512-4SgeBTYGCTrg6xMYiuG9PhWd5mh0BMdm0kRtPUzKAj6GB0k9D4AHS0YkdtgrB/+HTlk19GGF+Hm4c+aFNK8Cdg=="
       crossorigin="anonymous">
   </head>
 
   <body>
 
+    <div class="mdc-tab-bar" role="tablist">
+      <div class="mdc-tab-scroller">
+        <div class="mdc-tab-scroller__scroll-area">
+          <div class="mdc-tab-scroller__scroll-content">
+            <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                <span class="mdc-tab__text-label">Favorites</span>
+              </span>
+              <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+              <div class="mdc-tab__focus-ring"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <label class="mdc-text-field mdc-text-field--filled">
       <span class="mdc-text-field__ripple"></span>
-      <span class="mdc-floating-label" id="name-of-table">Label</span>
+      <span class="mdc-floating-label" id="name-of-table">Name of table</span>
       <input type="text" class="mdc-text-field__input" aria-labelledby="name-of-table">
       <span class="mdc-line-ripple"></span>
     </label>
@@ -23,7 +46,7 @@
   </body>
 
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"
-    integrity="sha256-8DHMt+TYs1kVcO+R+oZYTrHYIYwHUOChiQsqKb2BT3g= sha384-NQs9Lm2CZqPDbiQog4Tl9+s+LYnPbrwOF7kGY1ks7rl5A7rJypS6Cuqt6HFYtPC+ sha512-52x9jxRlpg4HFObOpmnst5aeTZxf3nqEAk0E0MRwP5mOQwWgIr9BydMAQyeIWhHiMZN/nvEpoStVS97oLrCg7A=="
+    integrity="sha512-52x9jxRlpg4HFObOpmnst5aeTZxf3nqEAk0E0MRwP5mOQwWgIr9BydMAQyeIWhHiMZN/nvEpoStVS97oLrCg7A=="
     crossorigin="anonymous"></script>
   <script>mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));</script>
 
